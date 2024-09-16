@@ -1,71 +1,42 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
+import viberr from '../../assets/Design uten navn.png';
+import freshBurger from '../../assets/pngwing.com (6).png';
 import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import fitLift from '../../assets/pngwing.com (5).png';
 import ProjectCard from '../../common/ProjectCard';
-import { motion } from 'framer-motion';
 
 function Projects() {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 }
-  };
-
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
-      <motion.div
-        className={styles.projectsContainer}
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.div variants={cardVariants}>
-          <ProjectCard
-            src={viberr}
-            link="https://github.com/Ade-mir/company-landing-page-2"
-            h3="LiveLink"
-            p="Real-Estate App"
-          />
-        </motion.div>
-        <motion.div variants={cardVariants}>
-          <ProjectCard
-            src={freshBurger}
-            link="https://github.com/Ade-mir/company-landing-page-2"
-            h3="Fresh Burger"
-            p="Hamburger Restaurant"
-          />
-        </motion.div>
-        <motion.div variants={cardVariants}>
-          <ProjectCard
-            src={hipsster}
-            link="https://github.com/Ade-mir/company-landing-page-2"
-            h3="Hipsster"
-            p="Glasses Shop"
-          />
-        </motion.div>
-        <motion.div variants={cardVariants}>
-          <ProjectCard
-            src={fitLift}
-            link="https://github.com/Ade-mir/company-landing-page-2"
-            h3="FitLift"
-            p="Fitness App"
-          />
-        </motion.div>
-      </motion.div>
+      <div className={styles.projectsContainer}>
+        <ProjectCard
+          src={viberr}
+          link="https://github.com/PuneethKanike/my-portfolio"
+          h3="Puneeth K"
+          p="Portfolio App"
+        />
+        <ProjectCard
+          src={hipsster}
+          link="https://github.com/PuneethKanike/mern-estate"
+          h3="LiveLink"
+          p="Real-Estate App"
+        />
+        <ProjectCard
+          src={fitLift}
+          link="https://github.com/PuneethKanike/MERN--Auth"
+          h3="MERN-Auth"
+          p="Authentication App"
+        />
+        <ProjectCard
+          src={freshBurger}
+          link="https://github.com/PuneethKanike/"
+          h3="upcoming"
+          p="upcomig App"
+        />
+        
+        
+      </div>
     </section>
   );
 }
