@@ -1,6 +1,6 @@
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/Design uten navn.png';
-import freshBurger from '../../assets/pngwing.com (6).png';
+import freshBurger from '../../assets/4153553.jpg';
 import hipsster from '../../assets/hipsster.png';
 import fitLift from '../../assets/pngwing.com (5).png';
 import ProjectCard from '../../common/ProjectCard';
@@ -30,9 +30,9 @@ function Projects() {
         />
         <ProjectCard
           src={freshBurger}
-          link="https://github.com/PuneethKanike/"
-          h3="upcoming"
-          p="upcomig App"
+          link="https://github.com/PuneethKanike/job-portal"
+          h3="MERN-Job"
+          p="Job Portal App"
         />
         
         
